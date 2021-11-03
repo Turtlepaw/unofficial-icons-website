@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject IJSRuntime jsRuntime
 
 <PageTitle>Pepperbot</PageTitle>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,14 +15,16 @@
 <img src="https://us-east-1.tixte.net/uploads/turtlepaw.is-from.space/Discord_l8Sip3J3jq.png" />
 <h3 class="text-font">Monitor your Discord traffic</h3>
 <p class="text-font">Have an invite that you want to know what its for? Add an invite note to it!</p>
-<button class="btn btn-primary" onclick="window.open('@invite','_blank');">Start monitoring your invites</button>
+ <RadzenButton style="margin: 0 1rem 1rem 0" Click=@(args => OpenInvite()) Text="Start monitoring your invites" ButtonStyle="@CurrentButtonStyle" />
 <br /><br />
 <img src="https://us-east-1.tixte.net/uploads/turtlepaw.is-from.space/Discord_soEXWkcwtD.png" />
 <h3 class="text-font">See your favorite messages</h3>
 <p class="text-font">Have a message that you really like? Bookmark it!</p>
-<button class="btn btn-primary" onclick="window.open('@invite','_blank');">Start bookmarking messages</button>
+<RadzenButton style="margin: 0 1rem 1rem 0" Click=@(args => OpenInvite()) Text="Start bookmarking messages" ButtonStyle="@CurrentButtonStyle" />
 <br /><br />
 
 @code {
+   public Radzen.ButtonStyle CurrentButtonStyle { get; set; } = ButtonStyle.Light;
     public string invite { get; set; } = "https://discord.com/api/oauth2/authorize?client_id=891109752078213172&scope=applications.commands+bot&permissions=8";
+    async void OpenInvite() => await jsRuntime.InvokeAsync<object>("open", invite, "_blank");
 }
