@@ -1,8 +1,8 @@
-﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
     font-family: proxima-nova, sans-serif;
-    color: white;
+    /* color: white; */
 }
 
 h1:focus {
@@ -11,6 +11,18 @@ h1:focus {
 
 a, .btn-link {
     color: #0077cc;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    row-gap: 6rem;
+    column-gap: 6rem;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    display: grid;
+    justify-content: center;
 }
 
 .btn-primary {
@@ -25,11 +37,11 @@ a, .btn-link {
     font-weight: 400;
 }
 .text-font {
-    color: white;
+    color: black;
 }
 
 body {
-    background-color: #272934;
+    background-color: white;
 }
 
 .content {

@@ -6,22 +6,32 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 
-
 <h1 class="text-font">The only bot that can spice up your Discord experience</h1>
 <p>Create button roles, sticky messages, invite notes, embeds, tickets, and more with <strong>Pepperbot</strong></p>
 <br />
 <p class="has"><Has Title="Embeds"/><br /><Has Title="Invite Management"/><br /><Has Title="Emoji Management"/><br /><Has Title="Moderation"/></p>
+
 <br /><br />
+
+<div class="grid">
 <img src="https://us-east-1.tixte.net/uploads/turtlepaw.is-from.space/Discord_l8Sip3J3jq.png" />
 <h3 class="text-font">Monitor your Discord traffic</h3>
 <p class="text-font">Have an invite that you want to know what its for? Add an invite note to it!</p>
- <RadzenButton style="margin: 0 1rem 1rem 0" Click=@(args => OpenInvite()) Text="Start monitoring your invites" ButtonStyle="@CurrentButtonStyle" />
+<RadzenButton style="margin: 0 1rem 1rem 0" Click=@(args => OpenInvite()) Text="Start monitoring your invites" ButtonStyle="@CurrentButtonStyle" />
+</div>
+
 <br /><br />
+
+<div class="grid">
 <img src="https://us-east-1.tixte.net/uploads/turtlepaw.is-from.space/Discord_soEXWkcwtD.png" />
 <h3 class="text-font">See your favorite messages</h3>
 <p class="text-font">Have a message that you really like? Bookmark it!</p>
 <RadzenButton style="margin: 0 1rem 1rem 0" Click=@(args => OpenInvite()) Text="Start bookmarking messages" ButtonStyle="@CurrentButtonStyle" />
+</div>
+
 <br /><br />
+<h3>Get started now!</h3>
+<RadzenButton style="margin: 0 1rem 1rem 0" Click=@(args => OpenInvite()) Text="Start bookmarking messages" ButtonStyle="@CurrentButtonStyle" />
 
 @code {
    public Radzen.ButtonStyle CurrentButtonStyle { get; set; } = ButtonStyle.Light;
