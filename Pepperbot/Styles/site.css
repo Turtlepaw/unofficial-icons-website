@@ -40,8 +40,7 @@ code {
 }
 
 .top {
-    background: #d62246;
-    background-image: "boxes.png";
+    background: #7289da;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -99,5 +98,5 @@ code {
 }
 
 .end-button {
-    background: #d62246
+    background: #7289da
 }
