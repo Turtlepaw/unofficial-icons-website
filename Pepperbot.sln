@@ -5,6 +5,11 @@ VisualStudioVersion = 17.0.31815.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pepperbot", "Pepperbot\Pepperbot.csproj", "{3D30D599-6042-47A8-9437-A9A0F95056AB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{E630514C-5D9E-4823-B246-1B41137CEDC4}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\main.yml = .github\workflows\main.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
