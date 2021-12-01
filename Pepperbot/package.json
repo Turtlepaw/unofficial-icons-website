@@ -5,6 +5,7 @@
     "gulp-postcss": "^9.0.1",
     "postcss": "^8.3.11",
     "precss": "^4.0.0",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^2.2.19",
+    "glob-parent": ">=5.1.2"
   }
 }
