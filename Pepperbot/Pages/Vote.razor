@@ -1,0 +1,11 @@
+﻿@page "/vote"
+@inject NavigationManager NavManager
+
+<h1>Redirecting you to https://top.gg</h1>
+
+@code {
+    protected override void OnInitialized()
+    {
+        NavManager.NavigateTo("https://top.gg/bot/859915461692096552/vote");
+    }
+}

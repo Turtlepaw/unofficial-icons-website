@@ -1,0 +1,11 @@
+﻿@page "/invite"
+@inject NavigationManager NavManager
+
+<h1>Redirecting you to https://discord.com</h1>
+
+@code {
+    protected override void OnInitialized()
+    {
+        NavManager.NavigateTo("https://discord.com/oauth2/authorize?client_id=891109752078213172&scope=bot%20applications.commands&permissions=285548604535");
+    }
+}
