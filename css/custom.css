@@ -1,0 +1,111 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+code {
+    font-family: source-code-pro,Menlo,Monaco,Consolas,courier new,monospace
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.top {
+    background: #5865F2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.main-page {
+    overflow-x: hidden;
+    text-rendering: geometricPrecision
+}
+
+.feature-header {
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.navigation {
+    width: 90%;
+    max-width: 60m;
+    height: 6rem;
+    margin: auto
+}
+
+.nav-links, .navigation {
+    display: flex;
+    justify-content: space-between
+}
+
+.nav-links {
+    line-height: 6rem;
+    width: 50%;
+    min-width: 12rem;
+    max-width: 20rem
+}
+
+.feature, .ofeature {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    word-wrap: break-word;
+    padding: 3rem 2rem
+}
+
+.blurple {
+    --tw-text-opacity: 1;
+    color: #5865F2;
+}
+
+.ofeature {
+    background: #dedede
+}
+
+.efeature {
+    width: 100%;
+    display: flex;
+    word-wrap: break-word;
+    justify-content: center;
+    padding: 3rem 2rem
+}
+
+.icon-show {
+    width: 300px
+}
+
+.end-button {
+    background: #5865F2
+}

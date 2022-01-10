@@ -12502,7 +12502,7 @@ video {
 }
 
 .rounded-full {
-  border-radius: 9999px;
+  /* border-radius: 9999px; */
 }
 
 .rounded-t-none {
