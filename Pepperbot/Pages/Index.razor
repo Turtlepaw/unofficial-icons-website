@@ -4,86 +4,77 @@
 @inject IJSRuntime jsRuntime
 <div class="text-center text-black main-page">
     <div class="pb-12 top">
-        <div name="navigation" class="navigation">
-            <img src="pepper.svg" class="h-full rounded-full">
-            <div class="nav-links text-white font-semibold">
-                <a href="@invite" target="_blank"
-                   class="hover:underline cursor-pointer">Invite</a><a href="https://docs.pepper.trtle.xyz" target="_blank"
-                                                                       class="hover:underline cursor-pointer">Docs</a><a href="https://pepper.trtle.xyz/support"
-                                                                                                                         target="_blank" class="hover:underline cursor-pointer">Support</a><a href="/auth" class="hover:underline cursor-pointer">Login</a>
-            </div>
-        </div>
+        <NavMenu/>
         <div id="main" name="main" class="mt-10 text-white">
 
-            <h1 class="text-6xl font-bold align-middle">The Only Bot That Can Spice Up Your Discord Experience</h1>
+            <h1 class="text-6xl font-bold align-middle">Icons for free</h1>
             <h1 class="text-6xl opacity-20 transform -translate-y-5 font-bold mb-2 align-middle">
                 <span class="opacity-0">.</span>
             </h1>
-            <p class="font-normal text-lg">Set up button roles, automod, tickets and so more!</p><a href="@invite"
+            <p class="font-normal text-lg">Icons for free + no attribution required</p><a href="@icons"
                                                                                                      target="_blank"
-                                                                                                     class="block bg-white text-black font-bold transition duration-200 shadow hover:shadow-2xl ease-in-and-out rounded-lg mx-auto mt-16 px-2 py-4 hover:text-red-800 text-xl font-sans w-60">
-                <i class="fas fa-gifts"></i> Invite Pepper
+                                                                                                     class="block bg-white text-black font-bold transition duration-200 shadow hover:shadow-2xl ease-in-and-out rounded-lg mx-auto mt-16 px-2 py-4 hover:blurple text-xl font-sans w-60">
+                View Icons
             </a>
         </div>
     </div>
     <div class="feature flex-col sm:flex-row text-center sm:text-left">
-        <div class="w-full sm:w-1/2 p-4 sm:p-8"><img class="rounded-lg  mx-auto" src="https://us-east-1.tixte.net/uploads/turtlepaw.is-from.space/Discord_ty7r6aGj9m.png"></div>
+        <div class="w-full sm:w-1/2 p-4 sm:p-8"><img class="rounded-lg  mx-auto icon-show" src="img/gift.svg"></div>
         <div class="w-full sm:w-1/2 sm:p-8 feature-header">
-            <h1 class="font-bold text-5xl mb-3">Simple Ticket Setup</h1>
-            <p class="font-semibold text-lg">Pepperbot's Ticket System makes setting up tickets simple.</p>
+            <h1 class="font-bold text-5xl mb-3">No attribution required!</h1>
+            <p class="font-semibold text-lg">Discons is completely free, no attribution or anything like that!</p>
         </div>
     </div>
     <div class="ofeature flex-col sm:flex-row-reverse text-center sm:text-left">
         <div class="w-full sm:w-1/2 p-4 sm:p-8">
-            <img class="rounded-lg  mx-auto"
-                 src="https://turtlepaw.is-from.space/r/Discord_1epXofkDFN.png">
+            <img class="rounded-lg  mx-auto icon-show"
+                 src="img/star.svg">
         </div>
         <div class="w-full sm:w-1/2 sm:p-8 feature-header">
-            <h1 class="font-bold text-5xl mb-3">Powerful Embeds</h1>
-            <p class="font-semibold text-lg">Create embeds to show rules, show information or just to show off.</p>
+            <h1 class="font-bold text-5xl mb-3">Beautiful icons</h1>
+            <p class="font-semibold text-lg">We have lots of beautiful ready for your bot, server, or something else!</p>
         </div>
     </div>
     <div class="feature flex-col sm:flex-row text-center sm:text-left">
         <div class="w-full sm:w-1/2 p-4 sm:p-8">
-            <img class="rounded-lg  mx-auto"
-                 src="https://turtlepaw.is-from.space/r/Discord_iMYWqf3U3S.png">
+            <img class="rounded-lg  mx-auto icon-show"
+                 src="img/door.svg">
         </div>
         <div class="w-full sm:w-1/2 sm:p-8 feature-header">
-            <h1 class="font-bold text-5xl mb-3">Create Notes For Invites!</h1>
-            <p class="font-semibold text-lg">Create Invite Notes to see where people are coming from.</p>
+            <h1 class="font-bold text-5xl mb-3">Variety of icons</h1>
+            <p class="font-semibold text-lg">We have lots of icons to choose from and if you don't find your icon you want ping us in our <SupportServer TextBold="false"/>.</p>
         </div>
     </div>
     <div class="ofeature flex-col sm:flex-row-reverse text-center sm:text-left">
-        <div class="w-full sm:w-1/2 p-4 sm:p-8"><img class="rounded-lg  mx-auto" src="https://us-east-1.tixte.net/uploads/turtlepaw.is-from.space/Discord_O4F3oiH8L2.png"></div>
+        <div class="w-full sm:w-1/2 p-4 sm:p-8"><img class="rounded-lg  mx-auto icon-show" src="img/cog.svg"></div>
         <div class="w-full sm:w-1/2 sm:p-8 feature-header">
-            <h1 class="font-bold text-5xl mb-3">Moderation Commands</h1>
-            <p class="font-semibold text-lg">Kick a member, ban a member, lock a channel or unlock a channel.</p>
+            <h1 class="font-bold text-5xl mb-3">Formats</h1>
+            <p class="font-semibold text-lg">You can get your icons in different formats like svg or png.</p>
         </div>
     </div>
     <div class="feature flex-col sm:flex-row text-center sm:text-left">
         <div class="w-full sm:w-1/2 p-4 sm:p-8">
-            <img class="rounded-lg
-mx-auto" src="https://us-east-1.tixte.net/uploads/turtlepaw.is-from.space/Discord_EYAeiOqtK7.png">
+            <img class="rounded-lg icon-show mx-auto" src="img/wumpus_wave.svg">
         </div>
         <div class="w-full sm:w-1/2 sm:p-8 feature-header">
-            <h1 class="font-bold text-5xl mb-3">Fun Commands For Everyone!</h1>
-            <p class="font-semibold text-lg">Try fun commands like /youtube, /meme, /pet or /cook!</p>
+            <h1 class="font-bold text-5xl mb-3">Use it everywhere</h1>
+            <p class="font-semibold text-lg">Use it in your server, bot, and anywhere else!</p>
         </div>
     </div>
     <div class="efeature flex-col">
         <div class="w-full sm:p-8 feature-header">
-            <h1 class="font-bold text-5xl mb-3">Slash Commands</h1>
-            <p class="font-semibold text-lg">Pepperbot's Slash Commands and Buttons make running a command super easy!</p>
+            <h1 class="font-bold text-5xl mb-3"><a href="support" class="hover:underline cursor-pointer">Support Server</a></h1>
+            @*<p class="font-semibold text-lg"></p>*@
         </div>
-        <div class="w-full p-4 sm:p-8"><img class="rounded-lg  mx-auto" src="https://us-east-1.tixte.net/uploads/turtlepaw.is-from.space/Discord_UZCgI97fdx.png"></div>
+        <div class="w-full p-4 sm:p-8"><img class="rounded-lg icon-show  mx-auto icon-show" src="img/Discord_blurple.svg"></div>
     </div>
     <div class="mt-56">
-        <h1 class="text-3xl font-black">Get Started Now!</h1><a href="@invite"
+        <h1 class="text-3xl font-black">Get Started Now!</h1><a href="@icons"
                                                                 target="_blank"
-                                                                class="block bg-white text-white font-bold transition duration-200 shadow hover:shadow-2xl ease-in-and-out rounded-lg mx-auto end-button mt-5 px-2 py-4 mb-36 hover:opacity-80 text-xl font-sans w-60"> Invite Pepper</a>
+                                                                class="block bg-white text-white font-bold transition duration-200 shadow hover:shadow-2xl ease-in-and-out rounded-lg mx-auto end-button mt-5 px-2 py-4 mb-36 hover:opacity-80 text-xl font-sans w-60">Icons</a>
     </div>
 </div>
 
 @code {
-    public string invite { get; set; } = "https://discord.com/api/oauth2/authorize?client_id=891109752078213172&scope=applications.commands+bot&permissions=8";
+    public string icons { get; set; } = "/icons";
 }

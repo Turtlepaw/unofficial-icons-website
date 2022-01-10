@@ -40,7 +40,7 @@ code {
 }
 
 .top {
-    background: #7289da;
+    background: #5865F2;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -85,6 +85,11 @@ code {
     padding: 3rem 2rem
 }
 
+.blurple {
+    --tw-text-opacity: 1;
+    color: #5865F2;
+}
+
 .ofeature {
     background: #dedede
 }
@@ -97,6 +102,10 @@ code {
     padding: 3rem 2rem
 }
 
+.icon-show {
+    width: 300px
+}
+
 .end-button {
-    background: #7289da
+    background: #5865F2
 }

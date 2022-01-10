@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Styles\site.css" />
+    <Content Remove="Pages\User.razor" />
+    <Content Remove="Pages\Vote.razor" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +22,10 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\custom.css" />
   </ItemGroup>
 
 </Project>
