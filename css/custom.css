@@ -1,4 +1,4 @@
-﻿@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -108,4 +108,67 @@ code {
 
 .end-button {
     background: #5865F2
+}
+
+.flexlist {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 2px;
+    transition: all .2s cubic-bezier(.4,.6,.5,1.32);
+    vertical-align: middle;
+    border: 1px solid transparent;
+    position: relative;
+    padding: 24px 0 0;
+    width: 100%;
+    padding-bottom: 24px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column;
+    border-bottom: 1px solid #d6e0ea;
+    /* width: 80%; */
+    height: inherit;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* Spaces */
+    gap: 10px;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.flexitem:hover {
+    border: 3px solid #5865F2;
+}
+
+.buttons {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.sidebutton {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.blazorModel {
+    width: 600px;
+    z-index: 102;
+    background-color: #fff;
+    border: #fff;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
 }
