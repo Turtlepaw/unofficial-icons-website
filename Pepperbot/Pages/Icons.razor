@@ -1,6 +1,9 @@
 ﻿@page "/icons"
 @using Microsoft.JSInterop
-@inject IJSRuntime JS;
+@inject HttpClient Http
+@inject IJSRuntime JSRuntime
+
+@inject IModalService modal
 
 <div class="text-center text-black main-page">
     <div class="pb-12 top">
@@ -13,7 +16,49 @@
             </h1>
         </div>
     </div>
-    <div>
+    <div class="flexlist">
+        @foreach (var img in images)
+        {
+            <div class="flexitem" @onclick="@(() => ShowPopup(img.name, img.type))">
+            <center><img src="img/@(img.name + img.type)" style="width: 20px"/></center>
+                @img.name
+            </div>
+        }
     </div>
     
 </div>
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+
+    void ShowPopup(string name, string type)
+    {
+        var parameters = new ModalParameters();
+        parameters.Add(nameof(Icon.name), name);
+        parameters.Add(nameof(Icon.type), type);
+        var Options = new ModalOptions()
+        {
+            Class = "blazorModel"
+        };
+
+        Modal.Show<Icon>("", parameters, Options);
+    }
+
+    private ImgFile[] images { get; set; } = { };
+
+    public record ImgFile
+    {
+        public string name { get; set; }
+        public string type { get; set; }
+    }
+
+    private async Task GetFilesStartUp()
+    {
+        images = (await Http.GetFromJsonAsync<ImgFile[]>("img/data.json")).Where(i => i.type == ".svg").ToArray();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetFilesStartUp();
+    }
+}
