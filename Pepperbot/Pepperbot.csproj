@@ -35,12 +35,4 @@
     <None Include="wwwroot\css\custom.css" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Update="wwwroot\img\data.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-  </ItemGroup>
-
 </Project>
