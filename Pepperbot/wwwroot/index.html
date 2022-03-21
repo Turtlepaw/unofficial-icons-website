@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
+    <!-- Base -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Icons Discord</title>
     <base href="/" />
+    <!-- Icon & Title -->
+    <title>Icons Discord</title>
+    <link rel="icon" href="icon.png">
+    <!-- CSS -->
     <link href="css/spinner.css" rel="stylesheet" />
-    <link rel="icon" href="logo.svg">
-    <link rel="stylesheet" href="_content/Radzen.Blazor/css/default-base.css">
     <link href="css/site.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet" />
-
-
-    <!-- https://tailwindui.com/documentation#requirements -->
+    <link href="css/text.css" rel="stylesheet" />
+    <!-- Tailwind & Blazor Modals -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link href="_content/Blazored.Modal/blazored-modal.css" rel="stylesheet" />
-
+    <!-- Embed -->
     <meta content="Icons Discord" property="og:title" />
     <meta content="Welcome to Icons, where we have one of the best minimalistic, handcrafted, and beautiful Icons. We are known as the best source for icons & emotes on Discord." property="og:description" />
     <meta content="/" property="og:url" />
@@ -26,23 +25,21 @@
 </head>
 
 <body>
+    <!-- App & Spinner -->
     <div id="app">
-        <div class="spinner" style="align-items: center; position: center;">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
         </div>
     </div>
-
+    <!-- Blazor Errors -->
     <div id="blazor-error-ui">
-        An unhandled error has occurred.
+        An error has occurred!
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
+    <!-- Scripts -->
     <script src="_content/Blazored.Modal/blazored.modal.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
-    <!--<script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>-->
-
 </body>
-
 </html>

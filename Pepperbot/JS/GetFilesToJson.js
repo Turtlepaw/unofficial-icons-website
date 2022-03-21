@@ -1,6 +1,6 @@
 ﻿const fs = require("fs");
 
-const Files = fs.readdirSync('./Pepperbot/wwwroot/img');
+const Files = fs.readdirSync('../wwwroot/img');
 const FileArr = [];
 
 
@@ -14,4 +14,4 @@ for (const file of Files) {
     });
 }
 
-fs.writeFileSync("./Pepperbot/wwwroot/img/data.json", JSON.stringify(FileArr))
+fs.writeFileSync("../wwwroot/img/data.json", JSON.stringify(FileArr))

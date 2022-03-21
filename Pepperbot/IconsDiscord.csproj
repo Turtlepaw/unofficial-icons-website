@@ -7,13 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\js\**" />
+    <Content Remove="wwwroot\js\**" />
+    <EmbeddedResource Remove="wwwroot\js\**" />
+    <None Remove="wwwroot\js\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Pages\User.razor" />
     <Content Remove="Pages\Vote.razor" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="JS\GetFilesToJson.js" />
-    <Content Include="JS\index.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,8 +34,6 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="wwwroot\img\" />
-    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -25,7 +25,8 @@ body {
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #36393f;
 }
 
 code {
@@ -163,7 +164,7 @@ code {
 .blazorModel {
     width: 600px;
     z-index: 102;
-    background-color: #fff;
+    background-color: #36393F;
     border: #fff;
     flex-direction: column;
     padding-left: 30px;
@@ -171,4 +172,8 @@ code {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
+}
+
+.blazorModalText {
+    color: white;
 }

@@ -11,20 +11,31 @@
     <div class="pb-12 top">
         <NavMenu/>
         <div id="main" name="main" class="mt-10 text-white">
-            <h1 class="text-6xl font-bold align-middle">Icons</h1>
+            <h1 class="text-6xl font-bold align-middle">Icons Discord</h1>
+            <p class="font-normal text-lg">Welcome to Icons, where we have one of the best minimalistic, handcrafted, and beautiful Icons. We are known as the best source for icons & emotes on Discord.</p>
             <h1 class="text-6xl opacity-20 transform -translate-y-5 font-bold mb-2 align-middle">
                 <span class="opacity-0">.</span>
             </h1>
         </div>
     </div>
     <div class="flexlist">
-        @foreach (var img in images)
+        @if (images != null)
         {
-            <div class="flexitem" @onclick="@(() => ShowPopup(img.name, img.type))">
-            <center><img src="img/@(img.name + img.type)" style="width: 20px"/></center>
-                @img.name
+            @foreach (var img in images)
+            {
+                <div class="flexitem" @onclick="@(() => ShowPopup(img.name, img.type))">
+                    <center><img src="img/@(img.name + "." + img.type.ToLowerInvariant())" style="width: 60px;"/></center>
+                    <div class="IconListText">@img.name</div>
+                </div>
+            }
+        } else
+        {
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
             </div>
         }
+
     </div>
     
 </div>
@@ -55,7 +66,7 @@
 
     private async Task GetFilesStartUp()
     {
-        images = (await Http.GetFromJsonAsync<ImgFile[]>("img/data.json")).Where(i => i.type == ".png").ToArray();
+        images = (await Http.GetFromJsonAsync<ImgFile[]>("img/data.json")).Where(i => i.type.ToLowerInvariant().EndsWith("png")).ToArray();
     }
 
     protected override async Task OnInitializedAsync()
