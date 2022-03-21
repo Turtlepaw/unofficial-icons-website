@@ -5,12 +5,12 @@ const FileArr = [];
 
 
 for (const file of Files) {
-    const FileName = file.replace(".svg", "").replace(".png", "");
+    const FileName = file.replace(".png", "");
     const FileType = file.slice(file.indexOf("."), file.length);
 
     FileArr.push({
         name: FileName,
-        type: FileType
+        type: "PNG"
     });
 }
 

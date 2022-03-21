@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Pepperbot;
+using IconsDiscord;
 using Radzen;
 using Blazored.Modal;
 
