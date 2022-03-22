@@ -3,15 +3,25 @@
     color: white;
 }
 
+.linkw {
+    color: white;
+    text-decoration: none;
+}
+
+    .linkw:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
 .link {
     color: #5865f2;
     text-decoration: none;
 }
 
-.link:hover {
-    color: #5865f2;
-    text-decoration: underline;
-}
+    .link:hover {
+        color: #5865f2;
+        text-decoration: underline;
+    }
 
 .non-important {
     color: #CCCCCD !important;

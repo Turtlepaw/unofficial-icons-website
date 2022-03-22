@@ -1,0 +1,30 @@
+﻿@page "/credit"
+@page "/crediting"
+@using Microsoft.JSInterop
+@inject HttpClient Http
+@inject IJSRuntime JSRuntime
+
+@inject IModalService modal
+
+<div class="text-center text-black main-page">
+    <div class="pb-12 top">
+        <NavMenu/>
+        <div id="main" name="main" class="mt-10 text-white">
+            <h1 class="text-6xl font-bold align-middle">Crediting (UNOFFICIAL)</h1>
+            <h1 class="text-6xl opacity-20 transform -translate-y-5 font-bold mb-2 align-middle">
+                <span class="opacity-0">.</span>
+            </h1>
+        </div>
+    </div>
+
+    <div>
+                <div style="display: grid;">
+            <pre class="mr-0">
+                <code>
+                    *:iconsdiscord: Icons used in this server are from Icons: &lt;https://discord.gg/MEBke9YPWx&gt;*
+                </code>
+            </pre>
+        </div>
+    </div>
+    
+</div>
