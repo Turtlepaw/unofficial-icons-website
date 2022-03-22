@@ -15,6 +15,13 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  add_icons:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Run Node
+        run: node release/JS/GetFilesToJson.js
   # This workflow contains a single job called "build"
   build:
     runs-on: ubuntu-latest
@@ -31,11 +38,11 @@ jobs:
           
       # publishes Blazor project to the release-folder
       - name: Publish .NET Core Project
-        run: dotnet publish Pepperbot/Pepperbot.csproj -c Release -o release --nologo
+        run: dotnet publish IconsDiscord/IconsDiscord.csproj -c Release -o release --nologo
 
-      # changes the base-tag in index.html from '/' to 'Pepperbot-Site' to match GitHub Pages repository subdirectory.
-      #- name: Change base-tag in index.html from / to Pepperbot-Site
-      #  run: sed -i 's/<base href="\/" \/>/<base href="\/Pepperbot-Site\/" \/>/g' release/wwwroot/index.html
+      # changes the base-tag in index.html from '/' to 'IconsDiscord' to match GitHub Pages repository subdirectory.
+      #- name: Change base-tag in index.html from / to IconsDiscord
+      #  run: sed -i 's/<base href="\/" \/>/<base href="\/IconsDiscord-Site\/" \/>/g' release/wwwroot/index.html
 
       # copy index.html to 404.html to serve the same file when a file is not found
       - name: copy index.html to 404.html
