@@ -21,7 +21,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Run Node
-        run: node Pepperbot/JS/GetFilesToJson.js
+        run: node ./Pepperbot/JS/GetFilesToJson.js
         
       - name: Commit
         uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
