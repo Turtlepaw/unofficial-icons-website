@@ -24,11 +24,6 @@ jobs:
         run: node release/JS/GetFilesToJson.js
       - name: Commit
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
-    with:
-    # The name of the user that will be displayed as the author of the commit.
-    # Default: depends on the default_author input
-    author_name: Github Workflow
-
-    # The email of the user that will be displayed as the author of the commit.
-    # Default: depends on the default_author input
-    author_email: github@trtle.xyz
+        with:
+            author_name: Github Workflow
+            author_email: github@trtle.xyz
