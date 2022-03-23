@@ -1,0 +1,42 @@
+.title {
+    font-family: uni_sansheavy_caps, sans-serif;
+    color: white;
+}
+
+.linkw {
+    color: white;
+    text-decoration: none;
+}
+
+    .linkw:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+.link {
+    color: #5865f2;
+    text-decoration: none;
+}
+
+    .link:hover {
+        color: #5865f2;
+        text-decoration: underline;
+    }
+
+.non-important {
+    color: #CCCCCD !important;
+}
+
+@font-face {
+    font-family: 'uni_sansheavy_caps';
+    src: url('UniSansHeavyCAPS.woff2') format("woff2"), url('UniSansHeavyCAPS.woff') format('woff'), url('UniSansHeavyCAPS.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Icon List */
+
+.IconListText {
+    color: white;
+    font-size: 35px;
+}

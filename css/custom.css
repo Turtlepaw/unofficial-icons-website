@@ -25,7 +25,8 @@ body {
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #36393f;
 }
 
 code {
@@ -163,7 +164,7 @@ code {
 .blazorModel {
     width: 600px;
     z-index: 102;
-    background-color: #fff;
+    background-color: #36393F;
     border: #fff;
     flex-direction: column;
     padding-left: 30px;
@@ -171,4 +172,45 @@ code {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
+}
+
+.blazorModalText {
+    color: white;
+}
+
+.IconsLogo {
+    width: 100px;
+    display: inline;
+    margin-right: 15px;
+}
+
+.CodeBox, pre {
+    color: #e5e7eb;
+    background-color: #2f3136;
+}
+
+.CodeBox2, pre {
+    /*color: #374151;*/
+    /* background-color: #f2f3f5; */
+    overflow-x: auto;
+    font-size: .875em;
+    line-height: 1.7142857;
+    margin-top: 1.7142857em;
+    margin-bottom: 1.7142857em;
+    /*    padding-top: .8571429em;
+    padding-right: 1.1428571em;
+    padding-bottom: .8571429em;
+    padding-left: 1.1428571em;*/
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.mr-0 {
+    /* margin-top: 0; */
+    /* margin-bottom: 0; */
+}
+
+.CreditsText {
+    color: white;
 }

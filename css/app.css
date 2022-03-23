@@ -2,7 +2,7 @@
 
 html, body {
     font-family: proxima-nova, sans-serif;
-    /* color: white; */
+    color: #36393f;
 }
 
 h1:focus {
@@ -31,17 +31,12 @@ a, .btn-link {
     border-color: #1861ac;
 }
 
-.has {
-    color: rgb(182 190 199);
-    font-size: 14px;
-    font-weight: 400;
-}
 .text-font {
-    color: black;
+    color: white;
 }
 
 body {
-    background-color: white;
+    background-color: #36393f;
 }
 
 .content {
